@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+//    窗口在工程创建好了之后就存在了 我需要来创建第一个页面放到窗口上
+//    创建第一个页面
+    FirstViewController *first = [[FirstViewController alloc]init];
+//    添加到窗户上（指定根目录）
+    self.window.rootViewController = first;
+    
     return YES;
 }
 
