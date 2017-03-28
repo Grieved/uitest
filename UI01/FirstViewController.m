@@ -42,11 +42,10 @@
     view2.backgroundColor = [UIColor purpleColor];
 //    将view放在最上层
     [self.view bringSubviewToFront:view2];
-
+//    将view放在最下层
+    [self.view sendSubviewToBack:view2];
 //    子视图自杀
     [view1 removeFromSuperview];
-    
-//    是嫁鸡随鸡啊说
     
 
 }
